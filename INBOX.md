@@ -5,3 +5,4 @@ Append-only. No format required. Uncertainty welcome — write "unverified" rath
 Swept into canon on demand or roughly weekly. See `CLAUDE.md` for the four change classes.
 
 ---
+
