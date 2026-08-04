@@ -1,7 +1,7 @@
 # Heed — Canonical Positioning
 
 **Status:** Canonical. This file is authoritative on positioning, competitive framing, and approved language.
-**Last reviewed:** 2026-07-29
+**Last reviewed:** 2026-08-04
 **Owner:** Dheeraj
 
 **Supersedes entirely:**
@@ -13,7 +13,7 @@
 - The regulatory reports' legal analysis (§1, §2, §3, §9) — still current, still needs counsel review per Appendix A.
 - `Product_Spec.md` / `Pilot_Specs.txt` engineering detail — these need their own consolidation, separately, into one spec.
 
-**Unresolved and blocking:** pricing. See §8.
+**Category:** intelligent behavioral intervention. See §11.
 
 ---
 
@@ -76,20 +76,19 @@ The kill line differs by category, and knowing which axis is load-bearing per ob
 
 **Wedge:** the registration → KYC → first funded action lane, specifically. Highest abandonment, lowest regulatory sensitivity (no wagering or promotional logic in scope), cleanest before/after measurement because a completed first funded action is binary.
 
+**High-value capture inside the wedge.** Identifying and converting a high-value player — including a rival's VIP — *before their first bet* is inside this window, not a separate product scope. The LATAM intel about operators competing for VIPs pre-bet maps to onboarding friction, not post-funding retention. Post-funding VIP retention, cross-session lifecycle work, and identification after a player has already bet are out of scope.
+
 **Deprioritized:** mid-session monetization triggering. Carries UKGC/RG regulatory tail risk and puts the product on the wrong side of the safety-vs-monetization line during the period when its thresholds are least proven.
 
 **Verticals:** iGaming (Tier 1 ICP), DeFi on-ramps (parallel), prediction markets (emerging third).
 
 **Regulatory tiering changes the pitch.** UKGC/MGA-licensed operators respond to the compliance-native framing; offshore operators do not weight it the same way. Match the framing to the operator's own regulatory bar rather than leading with compliance universally.
 
-## 8. Pricing — UNRESOLVED
+## 8. Pricing
 
-Two figures are currently in circulation and they contradict each other:
+**$3–5K per engagement** for the two-to-four-week pilot, fixed fee, stated scope. Not a monthly rate.
 
-- Deck script: **$5–8K / month**, pilot tier
-- One-pager: **$3–5K per engagement**
-
-These are not reconcilable as-written — one is a recurring rate and one is a fixed scope. Any prospect who sees both documents will notice. **Resolve to a single number and structure, record it here, then correct both source documents.** This is blocking on the next prospect touchpoint, not on the next fundraise.
+The deck script's $5–8K/month figure is withdrawn — see `09-retired-positions.md` §15. Correct the deck script before the next prospect touchpoint.
 
 ## 9. Architectural constraints referenced by positioning
 
@@ -118,7 +117,9 @@ The rendering mechanism carries no manufactured urgency, no fake countdowns, no 
 
 ## 11. Approved and banned language
 
-**Use:** behavioral substrate; input model; pre-declared vocabulary; observes behavior rather than named events; behavioral control layer; signal, not decision; operator retains authority over every regulated outcome.
+**Use:** intelligent behavioral intervention; behavioral substrate; input model; pre-declared vocabulary; observes behavior rather than named events; signal, not decision; operator retains authority over every regulated outcome.
+
+**Category name:** **intelligent behavioral intervention.** Use this when asked what category Heed occupies. It describes what the product does without asserting speed as the differentiator and without the "control layer" framing, which implied authority Heed does not hold.
 
 **Avoid:** faster than / real-time as the differentiator; latency gap; no rules at all; AI decision engine; another CRM; personalization engine; anything asserting *when* a signal fired as the point of comparison.
 
@@ -133,3 +134,4 @@ The rendering mechanism carries no manufactured urgency, no fake countdowns, no 
 | Date | Change |
 |---|---|
 | 2026-07-29 | Created. Collapsed the two-axis frame to one axis with retroactivity as consequence. Split invisible-behavior claim into primary (aborted/partial actions) and secondary (genuine absences). Added FullStory carve-out. Corrected the "no rules" claim. Retired `Product_Posture.md`. Flagged pricing as blocking. |
+| 2026-08-04 | Category set to **intelligent behavioral intervention** (supersedes "behavioral control layer"). Pricing resolved to **$3–5K per engagement**. Wedge clarified: pre-first-bet VIP capture is in scope; post-funding retention is not. |

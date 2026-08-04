@@ -24,6 +24,8 @@ Fourteen contradictions found across `Product_Posture.md`, `Product_Spec.md`, `P
 
 **Replacement:** One axis only — the input model, event versus behavioral substrate. See `01-positioning.md`. Any framing that hands the incumbent a fast/slow axis to stand on has reverted to this position.
 
+**Recurrence log.** 3 Aug 2026 — the spoken opening on the LATAM call ran on "response window" and "not afterwards, but while it's actually going on" (`07-company-team-and-status.md`). 4 Aug 2026 — a GTM research document arrived framed end to end on "real-time behavioral inference vs. retroactive/rule-based tooling," and additionally led on rule-absence, which is demoted at §3. Two independent reversions in two days, one spoken and one written. This position is not holding on its own.
+
 ---
 
 ## 3. Rule-absence as the differentiator — DEMOTED
@@ -132,22 +134,38 @@ Fourteen contradictions found across `Product_Posture.md`, `Product_Spec.md`, `P
 
 ---
 
-## 14. Mid-session monetisation — OUT OF SCOPE, BUT DRIFTING
+## 14. Mid-session monetisation — OUT OF SCOPE
 
 **Position:** Bonus deployment on loss events is deprioritised for UKGC and RG tail risk. The pilot scope is registration through first funded action only.
 
-**The drift:** The Ember report offers "bonus deployment based on intent" pointed at a run of consecutive losses as use case 2, and a live LinkedIn message named bonus deployment as the example response. Ember is Bitcoin-native and probably not UKGC-licensed, so it may be survivable there — but the framing is now in written material and contradicts the stated scope.
+**The drift:** The Ember report offered "bonus deployment based on intent" pointed at a run of consecutive losses as use case 2, and a live LinkedIn message named bonus deployment as the example response.
 
-**Decision needed:** either declare it a deliberate exception for non-licensed operators and document the boundary, or remove it from the template before the next report goes to a licensed prospect. Default to a unit explainer or conversion breakdown as the example response; they make the same point without teaching the habit.
+**Resolved 4 Aug 2026:** Remove bonus-on-loss from the Ember template and from any licensed-prospect material. Default example responses are a unit explainer or conversion breakdown — they make the same point without teaching the habit.
 
 ---
 
-## 15. Pricing — UNRESOLVED, NOT RETIRED
+## 15. Pilot pricing — RESOLVED
 
-Deck script says $5–8K/month pilot tier. One-pager says $3–5K per engagement. Neither has been withdrawn. This is the one open contradiction in the set and must be settled before another prospect sees both documents. See `06-commercial-and-pilot-structure.md`.
+**Old:** Deck script said $5–8K/month pilot tier. One-pager said $3–5K per engagement. Both were in circulation.
+
+**Why the monthly figure lost:** Founder decision 4 Aug 2026 — fixed fee per engagement matches the pilot shape (two-to-four weeks, stated scope) and avoids implying an open-ended monthly commitment.
+
+**Current:** **$3–5K per engagement** for the pilot. Withdraw the deck script's $5–8K/month everywhere it appears. See `06-commercial-and-pilot-structure.md` and `01-positioning.md` §8.
+
+---
+
+## 16. Category name — SUPERSEDED
+
+**Old:** "A behavioral control layer" — listed under approved language in `01-positioning.md` as of 29 Jul 2026.
+
+**Why it lost:** Founder decision 4 Aug 2026. "Control layer" implied authority over regulated outcomes that sits with the operator, not Heed. The GTM research document's alternative — "real-time behavioral response infrastructure" — was never adopted; it is built on banned language (speed as differentiator) and is retired alongside this entry.
+
+**Replacement:** **Intelligent behavioral intervention.** Category name only — the input-model argument and approved/banned language rules in `01-positioning.md` §11 are unchanged.
 
 ---
 
 ## Open questions
 
-None currently flagged. Class 4 items (conflicting sources Claude cannot resolve alone) land here as they surface — see `CLAUDE.md` for the flag procedure.
+Class 4 items — conflicting sources Claude cannot resolve alone. See `CLAUDE.md` for the flag procedure.
+
+*No open Class 4 items as of 4 Aug 2026. The Aug 3–4 batch (category name, pricing, Brazil units, VIP scope, RG growth lever) was resolved by founder decision.*

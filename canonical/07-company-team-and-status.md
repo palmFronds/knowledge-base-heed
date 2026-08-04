@@ -6,9 +6,11 @@
 
 **Anthony Petrescu** — co-founder. Owns inference architecture and the SDK. Contact surface `apetresc@purdue.edu`.
 
-**Levi Bosshart** — collaborator on top-of-funnel lead sourcing and CRM. *Standing issue: he is an active founder at another company. Whether he is a co-founder with over 10% equity or a collaborator determines how he is represented on applications, and the bandwidth question should have a prepared answer before it surfaces in investor diligence rather than after.*
+**Levi Bosshart** — collaborator, not co-founder. Part-time top-of-funnel lead sourcing and CRM. He is an active founder at another company; represent as collaborator on applications and in diligence, not as a co-founder with over 10% equity. The bandwidth question should still have a prepared answer.
 
 **Scott Miller** — former Betting Hero operator, no longer at the company. Yielded operator-side intel on the registration-to-FTD friction lane. Not an advisor; a source.
+
+**Nicolas Seccatore** — LATAM iGaming B2B veteran based in Chile, reached by cold LinkedIn outreach, first call 3 Aug 2026. Supplier-side perspective across Brazil, Argentina, Peru, Chile, and Colombia. Has offered introductions to English-speaking Brazilian operators and a second call. Not an advisor; a source.
 
 ## Entity status — pre-incorporation
 
@@ -59,3 +61,7 @@ Earlier material claiming "design partner commitments secured" and "pilots under
 In live calls: opening monologues running too long before the first question, filler phrases clustering under pressure before a close, talking past buying signals instead of letting silence work, and offering flexibility on commitments the prospect did not ask for.
 
 In written outreach: asks that are always meeting-sized rather than answerable in a line, and openers that read as job-seeking rather than founder-to-operator.
+
+**In the spoken pitch: the retired frame is still what surfaces first.** On the 3 Aug 2026 LATAM call the opening description — given by Levi — ran on retired response-window language: "not afterwards, but while it's actually going on," "instead of only understanding drop-off after it happens," and "what we call a response window," which is the retired Axis Two verbatim (`09-retired-positions.md` §2). Dheeraj corrected onto the input model in the next turn and did it well, conceding real-time triggering explicitly. But the correction came second, in front of a source who went on to offer introductions. The opening is the part that gets remembered, and it is currently the part carrying retired language.
+
+Also on that call: a sweepstakes operator was cited aloud as a worked example, and described as one "we were working with." `03-market-and-icp.md` explicitly disqualifies the sweepstakes category, and there are no working relationships of any kind. Both halves of that sentence need to stop.

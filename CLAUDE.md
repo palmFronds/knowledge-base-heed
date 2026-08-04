@@ -4,7 +4,7 @@ Read this before touching any file in this set.
 
 ## What this is
 
-Ten canonical files describing Heed as of 30 July 2026. This is not a document archive — it is the single source of truth from which applications, decks, prospect reports, and outbound are generated. If a fact is not in here, it has not been checked. If it is in here and wrong, everything downstream is wrong.
+The canonical files in `canonical/` describe Heed as of 30 July 2026. This is not a document archive — it is the single source of truth from which applications, decks, prospect reports, and outbound are generated. If a fact is not in here, it has not been checked. If it is in here and wrong, everything downstream is wrong.
 
 ## The governing constraint
 
@@ -25,6 +25,32 @@ New facts land in `INBOX.md`. Append-only, no format, no thinking required. A li
 ```
 
 That is the whole capture protocol. Uncertainty is welcome in the inbox — "unverified" is a valid entry and better than a fact that never gets written down.
+
+### Raw source — calls, transcripts, notes
+
+Transcripts do not go in the inbox. They go in `sources/`, which is gitignored and never committed. The convention travels with the repo; the content does not.
+
+Two acts, nothing else.
+
+**Save the file** in whatever form it arrived — a Fireflies or Otter export, a Zoom `.vtt`, a `.docx`, a paragraph typed from memory. Any extension, no conversion, no cleanup, no header. Name it `YYYY-MM-DD-account.ext`:
+
+```
+sources/2026-08-03-pascal.vtt
+sources/2026-08-03-banxa-notes.txt
+```
+
+That filename is the entire required metadata. Contact, channel, and status are either already inside the file or are Claude's job at sweep.
+
+**Then one line in `INBOX.md`** — a pointer, never the transcript body:
+
+```
+2026-08-03  Call: Pascal — sources/2026-08-03-pascal.vtt
+2026-08-03  Call: Pascal — growth lead, they run Braze, funnel is weeks — sources/2026-08-03-pascal.vtt
+```
+
+Both are complete entries. The gist is optional and earns its ten seconds for one reason: the transcript is not committed and the inbox line is. If the file is ever lost, the gist is what survives.
+
+**A transcript is provenance, never a citation.** Canon must stand without it. No claim in `08-claims-register.md` may have "see the transcript" as its spoken defense.
 
 ## Curation — batched, deliberate
 
@@ -52,6 +78,30 @@ Two sources disagree and Claude cannot tell which is right.
 
 **Claude never resolves this alone.** Add it to the open-questions block at the bottom of `09-retired-positions.md`, mark the affected claim in `08-claims-register.md` with a ⚠️, and surface it. Averaging two conflicting positions into one smooth sentence is the single most destructive thing that can happen to this set — it produces text that reads confidently and is nobody's actual position.
 
+### Sweeping a transcript
+
+Claude reads the file, extracts atomic facts, routes each to its owning file, deletes the inbox line, and stamps the top of the transcript: `swept 2026-08-05 → 03, 08`. No stamp means unswept. Transcripts are kept indefinitely; sweeping never deletes one.
+
+**A call that changes nothing is a normal outcome.** Stamp it `swept 2026-08-05 → no change` and stop. No changelog entry. Do not manufacture a fact to justify the read.
+
+**Never lift phrasing.** Extract the fact, rewrite it in canon's voice. A transcript is a verbatim record of Heed speaking under time pressure, which is the exact condition under which the retired latency argument has already come back three times — `09-retired-positions.md` §1. The transcript pile is the highest-density source of retired language in the corpus.
+
+**Attribute what a prospect asserted, and enter it at 🔴.** A prospect describing their own stack, funnel, or numbers is one uncorroborated interested party. Under the register's legend that is 🔴, not 🟡 — 🟡 means triangulated. It lifts to 🟡 only when a second independent source says the same thing, and two operators saying the same thing about the market is exactly that. Check for that lift on every sweep; it is the cheapest confidence upgrade available. Write "Pascal's growth lead says their funnel runs weeks," never "Pascal's funnel runs weeks."
+
+**A prospect contradicting canon is Class 4, not Class 2.** One assertion from an interested party does not correct a checked fact, however mechanical the swap looks.
+
+**A transcript fact enters `08-claims-register.md` only if Heed would say it out loud to a third party.** Everything else lives in its owning file with an inline attribution. The register is the pre-flight check for external artifacts; a call log inside it destroys that.
+
+**Ceilings key off who is speaking, not off the call.** Counsel does not raise a regulatory claim above the ceilings already set in `05-regulatory-posture.md` and `08-claims-register.md` — research, never clearance.
+
+**A prospect's own drop-off numbers never become a Heed claim, and never appear in a report written for that prospect.** Repeating their number back reads as "we know your funnel," which is the posture `03-market-and-icp.md` and `06-commercial-and-pilot-structure.md` forbid. Named-partner facts also inherit the confidentiality question already flagged in `07-company-team-and-status.md` and `09-retired-positions.md`.
+
+**Heed's own words on the call are facts too.** If the rep argued speed, claimed a pilot, quoted a price, or promised a deliverable, surface it. A quoted price is Class 3 while pricing is unresolved — see `06-commercial-and-pilot-structure.md`. A recurring delivery pattern belongs in `07-company-team-and-status.md` under known personal patterns.
+
+**Names stay in the transcript.** Canon uses role-at-company — "Pascal's growth lead" — because canon is what external artifacts are generated from, and a name in canon leaks into a deck. The exception is when the name is the operative fact: `03-market-and-icp.md` names the Novig contact because the decline and the do-not-re-approach window attach to that person, not to the company.
+
+**Follow-ups are not knowledge.** Next steps and reminders go in Apollo. This set holds what is true.
+
 ---
 
 ## Fact ownership — one home per fact
@@ -74,8 +124,13 @@ All canonical files live in `canonical/` under these numbered names. Two known o
 
 - **Traction** appears in `07-company-team-and-status.md` and `08-claims-register.md`. `07` owns the narrative version. `08` owns the boundary of what may be said out loud. Change both together, always.
 - **Pricing** appears in `06-commercial-and-pilot-structure.md` and `09-retired-positions.md`. `06` owns it. `09` only records that it is unresolved and points at `06`.
+- **Pipeline roster** appears in `03-market-and-icp.md`, `07-company-team-and-status.md`, and `08-claims-register.md`. `03` owns per-account status and tiering, `07` owns the traction narrative, `08` owns whether the roster may be stated out loud and to whom. A call that moves an account changes all three. Change them together, always.
 
 When a fact changes, check whether it appears in more than one file before editing. If it does and it should not, collapse it and note the collapse.
+
+Raw source in `sources/` is not canon. It is never quoted and never counted as a file in this table.
+
+Call outcomes have no file of their own and do not get one. Account status goes to `03-market-and-icp.md`, a pricing reaction to `06-commercial-and-pilot-structure.md`, a competitor mechanism claim to `04-competitive-landscape.md`, a compliance objection to `05-regulatory-posture.md`. If something from a call fits nowhere, that is a `**GAP:**`, not a tenth canonical file.
 
 ---
 
@@ -102,6 +157,8 @@ Do not silently fix the downstream artifacts. Name them and let Dheeraj decide w
 Regulatory and market facts rot faster than product facts. Anything in `05-regulatory-posture.md` or the market claims in `08-claims-register.md` older than 90 days drops from 🟢 to 🟡 automatically and needs re-checking before external use. Product claims in `02-product-and-architecture.md` do not decay — they are verifiable by running the test suite.
 
 Specifically watch: GENIUS implementation dates, Brazil license counts, competitor valuations, prediction-market legal status by state, and sweepstakes enforcement.
+
+Facts sourced from a call carry the call date inline — "as of the 3 Aug 2026 call." An operator's stack, funnel shape, and roadmap move faster than regulation: Underdog's March 2026 layoffs changed its account profile inside a quarter. The inline date is the decay signal. No separate rule.
 
 ---
 
@@ -157,8 +214,16 @@ Mobility runs both directions. Producing anything from this set:
 
 **If a request would require breaking a non-negotiable, say so before drafting** rather than drafting a compliant version and mentioning the conflict at the end.
 
+**Do not read transcripts while producing an artifact.** Transcripts are read at sweep and nowhere else. Anything worth using is already in canon; if it is not there, it did not survive the sweep, and that was a decision. Treating `sources/` as a searchable second canon is how this set acquires a shadow copy of itself.
+
 ---
 
 ## Session end
 
 One line, when anything changed: append to `CHANGELOG.md` as `YYYY-MM-DD · class · file · what changed · what it invalidates`. That is the whole ritual. If the changelog entry feels like work, the change was probably Class 3 and deserved it.
+
+A transcript sweep logs one line per canonical file changed, with the transcript path inside the "what changed" field so provenance survives the file itself.
+
+```
+2026-08-05 · 1 · canonical/03-market-and-icp.md · Pascal moved from cold target to active conversation after the 3 Aug call (sources/2026-08-03-pascal.vtt). Braze confirmed, funnel-in-weeks attributed to their growth lead. · Invalidates: nothing
+```

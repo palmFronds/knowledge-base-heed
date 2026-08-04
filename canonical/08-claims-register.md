@@ -24,7 +24,9 @@ Every claim usable in an application, deck, or prospect conversation, with a con
 
 🟢 **Underdog closed its sportsbook in December 2025, withdrew its Missouri application, and launched a federally licensed prediction exchange in July 2026.** Defense: publicly reported.
 
-🟢 **87 operators hold active Brazilian licenses as of Q3 2026; CPF validation is mandatory and SPA Ordinance 722/2024 requires biometric Face Match at onboarding.** Defense: SECAP portal is public.
+🟢 **87 operators hold active Brazilian licenses as of Q3 2026; CPF validation is mandatory and SPA Ordinance 722/2024 requires biometric Face Match at onboarding.** Defense: SECAP portal is public. When quoting market size, state *operators* — not brands.
+
+🔴 **Roughly 180–200 federally authorised brands in Brazil, plus state-level licensing above that.** Single source — LATAM B2B veteran, 3 Aug 2026 call. Different unit from licensed operators; operators may hold multiple brands. Do not conflate with the 87-operator figure. Say "brands" when using this number.
 
 🟢 **GENIUS Act implementation — OCC proposed rule 2 March 2026, FinCEN/OFAC joint NPRM 8 April 2026, regime operational January 2027.** Defense: regulator publications. Verify currency before use; this is moving.
 
@@ -33,6 +35,8 @@ Every claim usable in an application, deck, or prospect conversation, with a con
 🟡 **Novig reportedly valued near $500M with over $5B cumulative volume.** Defense: reported figure, not confirmed by the company. Say "reportedly."
 
 🟡 **Affiliate link effectiveness for driving sign-ups is declining.** Defense: industry reporting, directional rather than quantified.
+
+🔴 **A 2025 deposit tax in Colombia contracted the market roughly 25%; operators responded with an untargeted ~20% bonus because they could not identify which players had left over the tax.** Single source — a LATAM B2B veteran recalling figures on the 3 Aug 2026 call, not citing them. Corroborate before external use. Strong as an illustration of deposit-step friction; do not present it as researched.
 
 🔴 **Market sizing figures of any kind.** No defensible TAM figure currently exists in the document set. Do not put one in an application without building it from operator count times realistic contract value, with the arithmetic sayable out loud.
 
@@ -44,7 +48,11 @@ Every claim usable in an application, deck, or prospect conversation, with a con
 
 🟡 **Session replay tools carry a heavier privacy footprint than Heed.** Defense: architectural comparison. Do not attach it to a named vendor without checking that vendor's current public statements.
 
-🔴 **Any claim about a specific competitor's internal architecture or roadmap.** Not held. Do not make.
+🔴 **Mindway AI scaled from roughly 100,000 monitored players per month in 2021 to over 9 million by 2025, across 39 countries and 64 jurisdictions.** Single source: a GTM research document citing iGaming trade press, 4 Aug 2026. Not independently checked. Useful as evidence that licensed operators adopt behavioral inference at scale; verify before it appears in a deck.
+
+🟢 **Heed's category is intelligent behavioral intervention.** Defense: founder decision, 4 Aug 2026. Describes intervention on behavioral substrate without asserting speed as the differentiator. Do not substitute "real-time behavioral response infrastructure" or "behavioral control layer" — both are retired (`09-retired-positions.md` §16).
+
+🔴 **Any claim about a specific competitor's internal architecture or roadmap.** Not held. Do not make. This now explicitly includes OptiKPI and Talon.One, which are named in internal material without any mechanism work behind them.
 
 ## Regulatory claims
 
@@ -65,6 +73,8 @@ Every claim usable in an application, deck, or prospect conversation, with a con
 🟢 **85 qualified accounts in outbound across two Apollo lists.**
 
 🟢 **Pre-incorporation, counsel engaged, Delaware C-corp path identified.**
+
+🟢 **Pilot pricing is $3–5K per engagement** for the two-to-four-week pilot, fixed fee. Defense: founder decision, 4 Aug 2026. Do not quote the withdrawn $5–8K/month deck figure.
 
 ❌ **"Pilots underway with Banxa, Jackpot.com, and PrizePicks."** False. They are conversations. Appears in the expanded regulatory report and must be corrected before that document is attached to anything.
 

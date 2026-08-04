@@ -34,22 +34,29 @@ Abandonment reduction at the targeted screens. Completion rate through the funne
 
 The partner splits their own traffic; Heed is enabled on one arm. **Heed does not contain an A/B testing framework and must not be described as providing one.** Prior pilot material promised a "strict A/B testing framework" as a Heed capability. It is not one.
 
-## Pricing — UNRESOLVED, resolve before the next prospect touchpoint
+## Pricing
 
-Two figures currently exist across live materials:
+**$3–5K per engagement** for the two-to-four-week pilot — fixed fee, stated scope, not a monthly rate. Settled 4 Aug 2026. The deck script's $5–8K/month figure is withdrawn; see `09-retired-positions.md` §15.
 
-- Deck script: **$5–8K per month**, pilot tier
-- One-pager: **$3–5K per engagement**
+Post-pilot commercial structure remains under consideration and is not part of this number.
 
-These are not reconcilable as a monthly rate versus a fixed fee for the same thing, and any prospect who sees both documents will notice. This must be settled before either document goes to another prospect, an accelerator, or an investor.
+## A tighter pilot shape — recorded, not adopted
 
-Considerations for settling it: a four-week engagement at $5–8K/month prices roughly the same as $5–8K per engagement, so the simplest resolution is a fixed pilot fee with a stated scope, and a separate post-pilot commercial model. It also avoids implying an open-ended monthly commitment during a fixed-length pilot.
+A 4 Aug 2026 GTM research document (`sources/2026-08-04-gtm-case-studies.md`) argues the pilot above is directionally right but loose, on the evidence of how comparable categories broke through buyer education. The pattern it identifies across Darktrace, Sift, Featurespace, Feedzai, and Forter: none of them argued the prospect out of their existing mental model, all of them gave the prospect a fast, low-risk way to watch the new model catch something the old one missed, on the prospect's own data, in a fixed window, with the vendor absorbing the risk of being wrong.
+
+Three concrete changes follow from that, none of them adopted:
+
+- **A fixed window with a named deliverable.** Darktrace ran a free 30-day proof of value with a promised report of real findings, rather than an open-ended pilot. The Heed analog is a report of observed hesitation events and estimated recovered conversions against baseline, promised up front.
+- **"Alongside, not instead of."** Featurespace and Feedzai both defused the compliance objection by positioning explicitly as supplementing existing rule-based infrastructure rather than replacing it. Canon already carries the architecture for this — no PII, no execution logic, removable in one line — but not the sentence, and not for product and growth stakeholders rather than compliance.
+- **Outcome risk carried by Heed.** Forter made a chargeback guarantee the sales motion rather than a footnote. **Blocked**: any downside guarantee is a commercial commitment Heed has not adopted. It cannot be offered, or implied in a prospect conversation, until explicitly decided.
+
+Weigh this against the sales posture at the top of this file. Sales-first with no MVP expansion until partners ask is a deliberate constraint, and a guaranteed deliverable is a build commitment made to a prospect before the pipeline has asked for it.
 
 ## Post-pilot commercials
 
 Following validated lift, a transparent performance-aligned model. Options under consideration: a tiered SaaS structure on monthly tracked users, or a direct performance agreement tied to incremental first-deposit conversion delta maintained by the software.
 
-Do not commit to a specific structure in application or prospect materials until the pilot pricing above is resolved.
+Do not commit to a specific post-pilot structure in application or prospect materials until a partner asks.
 
 ## Framing discipline in all commercial material
 

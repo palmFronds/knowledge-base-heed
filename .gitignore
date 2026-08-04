@@ -1,0 +1,9 @@
+# Raw source material — call transcripts, exports, notes.
+# Local only, never committed. Protocol lives in CLAUDE.md.
+sources/**
+!sources/.gitkeep
+
+# OS and editor noise
+Thumbs.db
+desktop.ini
+.DS_Store

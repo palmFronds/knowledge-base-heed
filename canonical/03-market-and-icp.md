@@ -42,11 +42,33 @@ The January 2027 GENIUS deadline is the reason to talk now, and it expires.
 
 ## Tier 4 — Brazil
 
-The densest ICP match anywhere in this document, held at Tier 4 on reachability rather than fit. 87 operators with active licenses as of Q3 2026 plus 14 pending, every one carrying a compliance function by law. Mandatory CPF validation and biometric Face Match at onboarding under SPA Ordinance 722/2024, with the industry itself acknowledging the resulting registration drop-off.
+The densest ICP match anywhere in this document, held at Tier 4 on reachability rather than fit. **87 licensed operators** with active licenses as of Q3 2026 plus 14 pending (🟢, SECAP portal), plus roughly **180–200 federally authorised brands** per a LATAM B2B source on the 3 Aug 2026 call (🔴, different unit — operators may hold multiple brands). State which unit when quoting externally. Every operator carries a compliance function by law. Mandatory CPF validation and biometric Face Match at onboarding under SPA Ordinance 722/2024, with the industry itself acknowledging the resulting registration drop-off.
 
-Barriers are Portuguese-language outbound, a different conference circuit, timezone offset, and no existing relationships. Enforcement is live — SECAP removed 26 operators in H1 2026 for COAF and SIGAP failures — so filter against current license status before any outreach.
+Barriers are Portuguese-language outbound, a different conference circuit, and timezone offset. Enforcement is live — SECAP removed 26 operators in H1 2026 for COAF and SIGAP failures — so filter against current license status before any outreach.
+
+The "no existing relationships" barrier is partially lifted as of the 3 Aug 2026 call: a LATAM B2B source has offered introductions to English-speaking Brazilian operators. Unused as of this writing.
 
 The pilot proposition here is narrower and more provable than anything above it, because the friction point is known in advance and identical across operators.
+
+## LATAM beyond Brazil — intel, not yet tiered
+
+Source: Nicolas Seccatore, LATAM iGaming B2B veteran based in Chile, 3 Aug 2026 call. Single source giving his own read from years of supplier-side operator conversations, and he flagged it himself as possibly six months stale. Treat every figure here as 🔴 until corroborated. Nothing here re-tiers anything — that is a decision, not a fact.
+
+**These are not one market.** Brazil is its own category; northern and southern LATAM differ culturally, with the middle a mix.
+
+**Argentina** — roughly 80–90% casino rather than sports betting, against the usual assumption that sportsbook leads. Past acquisition and into retention, with heavy, deliberate VIP programmes.
+
+**Peru** — casino plus a large physical betting-shop network, roughly 60/40. The retail layer makes it structurally unlike the online-only markets.
+
+**Chile** — still a grey market. Land-based casinos are geographically apportioned at roughly one per 200km, so retail VIP relationships are local and defended.
+
+**Colombia** — a deposit tax introduced in 2025 contracted the market roughly 25%, because a 100k deposit landed as 80k in the wallet. Operators responded with a blanket ~20% bonus rather than a targeted one, and displaced players moved toward the black market. **The cleanest available illustration that friction introduced at the deposit step produces immediate, measurable abandonment** — and that operators could not tell which players left over the tax specifically, so everyone got the same bonus.
+
+**Brazil** — Federally authorised *brands* near 180–200 per Seccatore (🔴, 3 Aug 2026 call), plus state-level licensing above that. This is a different unit from the 87 licensed *operators* in Tier 4 above (🟢, SECAP). Both may be true; do not average or conflate. He characterises Brazil as still in the acquisition phase — heavy influencer and streamer spend — where Argentina has moved to retention.
+
+**The VIP asymmetry.** His strongest and most repeated point: LATAM operators concentrate retention effort almost entirely on VIP players, whom he values at 20–30 ordinary players each, and the competitive question they actually care about is identifying and taking a rival's VIP *before* that player has bet. General-population retention is treated as volume management. Pre-first-bet VIP capture — a high-value player still in onboarding who has not yet funded — is inside the current wedge (`01-positioning.md` §7). Post-funding VIP retention and cross-operator identification after a player has bet are not.
+
+**The competing fix, and the objection it produces.** His standing advice to operators is "keep it simple": ask the minimum at registration and defer everything else to the moment it is needed — bank details at deposit, not at sign-up. This is the objection Heed meets in every LATAM conversation, and it is a good one: the operator's instinct is to *remove* the step rather than instrument hesitation inside it. The answer has to be that regulated markets cannot remove mandated steps, only the friction inside them, which is the Brazil argument already made above.
 
 ## Tier 5 — Horse racing ADW and lottery couriers
 
@@ -83,3 +105,5 @@ Every ask should be smaller than a meeting. A question answerable in one line fr
 Never assert where a prospect's drop-off is. Frame findings as where Heed would expect to create value and let the prospect define the problem. Asserting drop-off puts them in the position of defending their funnel.
 
 Opening messages that mention a university and a vague "activation and retention" thesis get read as job-seeking. Lead with the specific observation, not the affiliation.
+
+Asking an experienced operator to critique the thesis — "from your experience, how would this fail?" — outperforms pitching them. The 3 Aug 2026 LATAM call was framed that way from a cold LinkedIn approach and produced an hour of market structure, an unprompted offer of introductions, and a second call. The ask was for a verdict, not for interest.

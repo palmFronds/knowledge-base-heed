@@ -42,9 +42,19 @@ Note on session replay specifically: capturing everything a user does, potential
 
 ## Fraud, risk, and RG scoring
 
+*Mindway AI, Neccton.*
+
 **Mechanism.** Evaluate a user or transaction against historical models — prior transaction patterns, device and network fingerprinting, known fraud rings, accumulated play history. Statistical power comes from history.
 
 **Why it structurally cannot do this.** An inherent cold-start problem sits exactly where Heed is strongest. A first-time depositor has no transaction history, no play pattern, often minimal device history — which is precisely the population where historical models are weakest and abandonment is highest. These systems also do not predict abandonment at all: a low fraud score says nothing about whether a legitimate user is about to give up on a confusing form. "Is this person a risk" and "is this person about to leave" are different questions answered by different data.
+
+**The named vertical analogs.** Mindway AI (an Aarhus University spinout) and Neccton's Mentor run behavioral monitoring inside licensed gambling operators — deposit velocity, bet size, session length, micro-signal patterns — to flag problem-gambling risk before a player self-identifies. This is the closest thing to Heed operating in the same industry on the same class of signal, and it is the one place in this file where the mechanism argument has to be made carefully rather than structurally.
+
+It still holds, and it holds on cold start specifically: every input those systems use is accumulated play history, which a user who has not yet made a first deposit does not have. They answer "is this established player at risk." Heed answers "is this new user about to leave." The populations barely overlap.
+
+They matter for two reasons that are not competitive. They are existence proof that licensed operators will buy behavioral inference and carry it through compliance review — the objection Heed spends most of its time on. And they scaled by treating tightening RG mandates as a distribution channel rather than an obstacle. Whether Heed should lead the same way is an open decision, not a settled position — see `09-retired-positions.md`.
+
+**Named but unassessed.** OptiKPI and Talon.One surface in adjacent-vendor discussion. Neither has been worked through on mechanism, so neither belongs in a pitch yet. `08-claims-register.md` prohibits claims about a specific competitor's architecture; a name is not a mechanism claim, and these are currently only names.
 
 ## Human concierge
 
