@@ -10,7 +10,9 @@ Argue mechanism, never speed.
 
 **Mechanism.** Ingest events, update a stored customer profile — recency, frequency, monetary value, lifecycle stage, segment membership. Campaigns trigger off rules evaluated against that stored profile, or off an event completing. The architecture assumes the event you care about has already happened and been recorded before any decision logic runs.
 
-**Why it structurally cannot do this.** A CRM has no concept of "a user is mid-action and has not yet decided." Its unit of work is a completed, logged event, not an in-progress interaction state. There is no webhook for "user is currently hesitating," so an eleven-second pause before a button press is invisible regardless of how fast the pipeline is. What the CRM sends next is a win-back campaign, which is a different and much lower-converting intervention than a message shown during the hesitation itself.
+**Why it structurally cannot do this.** A CRM has no concept of "a user is mid-action and has not yet decided." Its unit of work is a completed, logged event, not an in-progress interaction state. There is no webhook for "user is currently hesitating," so an eleven-second pause before a button press is invisible regardless of how fast the pipeline is. What the CRM sends next is a win-back campaign, because a win-back is the only thing it had input for.
+
+**Note the shape of this argument after 8 Aug 2026.** Heed does not send a competing message — it hands the CRM the input it never had, and the CRM sends whatever the operator configured. This makes the comparison better, not worse: Heed is not arguing that its message beats their message, it is arguing that their message had nothing to fire on. Do not restate it as "a message shown during the hesitation itself," which described Heed rendering (`09-retired-positions.md` §18).
 
 **Do not claim these tools are slow.** Optimove has genuine real-time triggering. The claim is that real-time triggering on an empty input is still nothing to fire on.
 
@@ -20,7 +22,9 @@ Argue mechanism, never speed.
 
 **Mechanism.** Instrument a page to capture a rich event stream — clicks, page views, form interactions, and in FullStory's case full session replay — and store it for analysts to query after the fact. "Real-time" here means a human can see an event within seconds, not that the platform acts.
 
-**Why it structurally cannot do this.** Built around a human-in-the-loop workflow: capture broadly, let a person look later, let that person decide what to build. There is no intent-classification layer and no response-firing mechanism in the product at all. A PM who spots a drop-off at the fee screen still has to brief an engineer, ship a fix, and wait weeks — which is the lag Heed removes.
+**Why it structurally cannot do this.** Built around a human-in-the-loop workflow: capture broadly, let a person look later, let that person decide what to build. There is no intent-classification layer, and the output terminates in a dashboard rather than arriving anywhere a system could act on it. A PM who spots a drop-off at the fee screen still has to brief an engineer, ship a fix, and wait weeks.
+
+*Corrected 9 Aug 2026 — this previously read "no response-firing mechanism in the product at all," which Heed also no longer has. The separation is delivery, not firing: their signal reaches a human who has to go looking; Heed's reaches the operator's rule engine.*
 
 Note on session replay specifically: capturing everything a user does, potentially including form content and full-page visuals, is a *heavier* privacy footprint than Heed's, not a lighter one. State this carefully — the specific claim about any named vendor's current practice should be checked against their public statements before appearing in a deck.
 
@@ -38,7 +42,11 @@ Note on session replay specifically: capturing everything a user does, potential
 
 **Mechanism.** Identity resolution across devices and touchpoints, plus event orchestration routing a unified stream to downstream tools. Profile-centric and pipeline-based: data flows through server-side routing before reaching any destination.
 
-**Why it structurally cannot do this.** The entire value proposition is a persistent cross-tool profile, which is architecturally the opposite of an ephemeral, minimal-data, single-session signal. Backend routing latency makes in-session response impossible by design. A CDP could theoretically run inference on the events flowing through it, but doing so requires exactly the persistent cross-source profile-building that creates the privacy exposure Heed's architecture avoids.
+**Why it structurally cannot do this.** The entire value proposition is a persistent cross-tool profile, which is architecturally the opposite of a minimal-data signal computed in the browser and not retained by the vendor that computed it.
+
+**Requalified 8 Aug 2026.** Heed's signal is ephemeral *in Heed's hands* — after emission Heed retains nothing beyond a per-selector aggregate. What the operator persists is theirs, and a CDP is a plausible destination for it. Do not claim the signal is ephemeral full stop; claim that Heed does not keep it. The difference is checkable and the stronger version is not.
+
+A CDP could run inference on the events flowing through it. The reason it does not is the same reason a CRM does not: those events are the named ones. Running it on raw substrate would require exactly the persistent cross-source profile-building that creates the privacy exposure Heed's architecture avoids. *(The previous version of this paragraph argued backend routing latency. That is a speed claim and this file's own instruction is to argue mechanism, never speed — removed 8 Aug 2026.)*
 
 ## Fraud, risk, and RG scoring
 

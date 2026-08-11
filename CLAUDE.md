@@ -94,7 +94,13 @@ Claude reads the file, extracts atomic facts, routes each to its owning file, de
 
 **Ceilings key off who is speaking, not off the call.** Counsel does not raise a regulatory claim above the ceilings already set in `05-regulatory-posture.md` and `08-claims-register.md` — research, never clearance.
 
-**A prospect's own drop-off numbers never become a Heed claim, and never appear in a report written for that prospect.** Repeating their number back reads as "we know your funnel," which is the posture `03-market-and-icp.md` and `06-commercial-and-pilot-structure.md` forbid. Named-partner facts also inherit the confidentiality question already flagged in `07-company-team-and-status.md` and `09-retired-positions.md`.
+**Drop-off numbers are governed by provenance, not by subject matter.** Carve-out decided 8 Aug 2026.
+
+**A figure a prospect asserted** — on a call, in an email, in a deck they showed you — never becomes a Heed claim and never appears in a report written for that prospect. Repeating their number back reads as "we know your funnel," which is the posture `03-market-and-icp.md` and `06-commercial-and-pilot-structure.md` forbid.
+
+**Data Heed measured itself, under agreement, on that partner's own funnel** is different and is permitted in a report to that partner. That is what a Phase 1 written read is (`06-commercial-and-pilot-structure.md`), and it is the only source for the abandonment-cost denominator (`09-retired-positions.md`).
+
+The two never mix inside one sentence, and measured data stays with the partner it was measured on — it does not become a market claim, a benchmark, or a number quoted to a second prospect without its own decision. Named-partner facts also inherit the confidentiality question already flagged in `07-company-team-and-status.md` and `09-retired-positions.md`.
 
 **Heed's own words on the call are facts too.** If the rep argued speed, claimed a pilot, quoted a price, or promised a deliverable, surface it. A quoted price is Class 3 while pricing is unresolved — see `06-commercial-and-pilot-structure.md`. A recurring delivery pattern belongs in `07-company-team-and-status.md` under known personal patterns.
 
@@ -129,6 +135,37 @@ All canonical files live in `canonical/` under these numbered names. Two known o
 When a fact changes, check whether it appears in more than one file before editing. If it does and it should not, collapse it and note the collapse.
 
 Raw source in `sources/` is not canon. It is never quoted and never counted as a file in this table.
+
+## What else lives in this repo — the direction-of-dependency test
+
+Decided 9 Aug 2026. Not everything generated in this project belongs here, and "case-by-case" is not a rule unless the case is written down. One test, applied to any non-canonical document:
+
+**Which way does the dependency run?**
+
+- **Canon depends on it → in-repo, under `artifacts/`.** If a canonical file cites the document as the answer to a question canon raises, the document is load-bearing for canon and has to be versioned beside it. `artifacts/retention-policy.md` is the first: `05-regulatory-posture.md` points at it for what is stored and for how long, so `05` is incomplete without it. **It stays.**
+- **It is generated from canon → outside the repo.** Decks, one-pagers, pilot briefs, prospect reports, site copy, sequence copy. Canon does not cite them; they consume canon. Keeping them here creates a second place where a claim lives and a second place for it to go stale, which is the failure this whole set exists to prevent.
+
+**The test in one line: if deleting the document would leave a canonical file with an unanswered question, it lives here. If deleting it would only mean regenerating it, it does not.**
+
+Applied to what exists today: `artifacts/retention-policy.md` is in. `refactor/website-copy.md` is out — it is site copy, canon does not depend on it, and it should live wherever the site does.
+
+Two things this test does not license. A document in `artifacts/` is still not canon: it does not appear in the ownership table, it is not a source of truth, and where it and a canonical file disagree the canonical file wins. And an in-repo document is not exempt from the blast-radius rule — when canon changes underneath it, name it stale like any other artifact.
+
+## `refactor/` — correcting an external artifact against canon
+
+A third directory, with one job: hold a live external artifact still while it is checked against canon. Files land here temporarily; they are not canon and they are not `artifacts/`.
+
+**`refactor/` is gitignored, like `sources/`.** The convention travels with the repo; the content does not. Both the source and its `_mod` output stay local — the direction-of-dependency test above already ruled that canon does not depend on them, and committing them would create the second place for a claim to go stale that the test exists to prevent. The `_mod` file is delivered to wherever the artifact actually lives, not versioned here.
+
+**Any file in `refactor/` is read-only input.** Generate `{name}_mod.{ext}` alongside it. Never edit the original. The original is the record of what was actually shipped, and the diff between the two is the whole value of the exercise.
+
+**Preserve the source's structure and approximate length, section by section.** This is a correctness pass, not a rewrite. A section that was three lines comes back three lines. Headings, order, and shape stay unless canon requires otherwise. The output has to be droppable into whatever produced the original — a mod file half the length of its source is a new artifact wearing the old one's name, and someone has to rebuild the page around it.
+
+**Where a canon-required correction cannot fit the source's length, note the delta inline** rather than overflowing silently. A one-line claim that needs three lines to state honestly is information about the artifact: it means the original was compressed past what canon supports, and that is worth surfacing rather than absorbing.
+
+**Where canon is silent on something the source asserts, leave it and flag it.** Absence of canon is neither permission to invent nor grounds to delete. A domain name, a video, a design choice, a phrase nobody has ruled on — it stays, and it goes in the report. Deleting it because it is unverified would strip the artifact of everything canon has not yet reached, which is most of what makes it a page rather than a claims list.
+
+**Report at the end**, in three parts: sections where length was preserved by substituting canon-supported material, sections where a delta was unavoidable, and everything canon neither supports nor forbids.
 
 Call outcomes have no file of their own and do not get one. Account status goes to `03-market-and-icp.md`, a pricing reaction to `06-commercial-and-pilot-structure.md`, a competitor mechanism claim to `04-competitive-landscape.md`, a compliance objection to `05-regulatory-posture.md`. If something from a call fits nowhere, that is a `**GAP:**`, not a tenth canonical file.
 

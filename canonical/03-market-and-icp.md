@@ -76,7 +76,7 @@ Lowest competitive noise in the entire market. Nobody is pitching these operator
 
 ADW platforms run under the Interstate Horseracing Act plus state licensing, with register-to-fund-to-wager funnels and sustained pressure to convert a younger demographic that finds exotic wager types opaque. **AmWager**, **Xpressbet**, **NYRA Bets**, **TwinSpires**.
 
-Lottery couriers run the cleanest version of the funnel under tightening state scrutiny. **Jackpot.com** (Strategy & Data contact active), **Lotto.com**, **TheLotter**.
+Lottery couriers run the cleanest version of the funnel under tightening state scrutiny. **Jackpot.com** — Strategy & Data contact, *deferred to early 2027 by inbound email on 8 Aug 2026, post-discovery. Three criteria stated: internal build feasibility, first-customer risk, and roadmap effort-versus-impact. The product thesis was not challenged and the input-model argument was not contested — this is comparative deferral, the objection class described in `01-positioning.md` §10.* **Lotto.com**, **TheLotter**.
 
 ## Channel plays — not direct accounts
 

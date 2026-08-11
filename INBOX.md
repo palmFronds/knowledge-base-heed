@@ -6,3 +6,4 @@ Swept into canon on demand or roughly weekly. See `CLAUDE.md` for the four chang
 
 ---
 
+*Empty. Last swept 8 Aug 2026 — the Jackpot.com deferral batch. See `CHANGELOG.md`.*

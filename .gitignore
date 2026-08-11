@@ -3,6 +3,12 @@
 sources/**
 !sources/.gitkeep
 
+# External artifacts held still for a correctness pass against canon.
+# Canon does not depend on them — direction-of-dependency test, CLAUDE.md.
+# Local only, never committed. Both the source and its _mod output.
+refactor/**
+!refactor/.gitkeep
+
 # OS and editor noise
 Thumbs.db
 desktop.ini
